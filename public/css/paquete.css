@@ -1,0 +1,383 @@
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-height: auto;
+    min-height: 10px;
+    width: 100%;
+    background-color: rgb(55, 32, 75);
+    z-index: 10;
+}
+
+.imagen-fondo,
+.transicion,
+.transicion-final,
+.contenido-tarjetas {
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+}
+
+.imagen-fondo {
+    width: 100%;
+    min-height: 10px;
+    max-height: auto;
+    background: transparent url('/img/REFERENCIALES/FONDO.jpg') 0% 0% repeat padding-box;
+    background-size: cover;
+    z-index: 20;
+}
+
+.transicion {
+    width: 100%;
+    height: 860px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #80808000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 30;
+    align-self: flex-start;
+}
+
+.transicion-final {
+    width: 100%;
+    height: 109px;
+    background: transparent linear-gradient(0deg, #FFFFFF 0%, #80808000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-self: flex-end;
+    z-index: 30;
+}
+
+.contenido-tarjetas {
+    height: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 78px;
+    justify-self: center;
+    padding-bottom: 100px;
+}
+
+.titulo-tarjetas {
+    margin-top: 150px;
+    grid-column: 1/3;
+    justify-self: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 40;
+}
+
+.clasificaciones {
+    margin-top: 116px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    width: auto;
+    justify-self: center;
+    z-index: 80;
+    grid-column: 1/span 2;
+    margin-bottom: 133px;
+    column-gap: 5rem;
+}
+
+.clase {
+    display: grid;
+    width: 180px;
+    height: 55px;
+    background: transparent url('/img/fondo.jpg') 0% 0% no-repeat padding-box;
+    border-radius: 33px;
+    opacity: 1;
+    background-size: cover;
+    justify-self: center;
+    transition: 0.9s;
+}
+
+.texto-clase {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 19px/6px BentonSans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal bold 14px/6px BentonSans;
+    letter-spacing: 0px;
+    color: #F9B50A;
+    opacity: 1;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.clase:hover {
+    box-shadow: 0 0 80px rgb(255, 255, 255);
+}
+
+.clase:hover>.texto-clase {
+    color: blanchedalmond;
+}
+
+.tarjeta_administrador {
+    height: auto;
+    width: 90%;
+    z-index: 40;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    text-decoration: none;
+}
+
+.tarjeta_administrador :hover {
+    cursor: pointer;
+}
+
+.contenedor_botones_administrador {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1/span 2;
+    position: absolute;
+    z-index: 40;
+}
+
+.boton-administrador {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 30px;
+    display: grid;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.editar {
+    background-color: #F9B50A;
+    margin-top: -2%;
+}
+
+.eliminar {
+    background-color: #FA6980;
+    margin-top: -2%;
+}
+
+.editar :hover {
+    cursor: pointer;
+}
+
+.texto_administrador {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-42) Helvetica;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 17px/20px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.anadir_paquete {
+    display: grid;
+    background-color: #F9B50A;
+    height: 420px;
+    width: 100%;
+    border-radius: 76px;
+    border: solid 7px rgba(255, 255, 255, 0.845);
+}
+
+.anadir_paquete:hover {
+    box-shadow: 0 0 80px rgb(255, 255, 255);
+    border: solid 7px rgba(255, 255, 255, 0.845)
+}
+
+.punteado {
+    height: 80%;
+    width: 90%;
+    border-radius: 76px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+
+.texto_anadir_paquete {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-size: 20px;
+}
+
+.anadir {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 15rem;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 1000;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 420px;
+    background: transparent url('/img/Componente 35 – 1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-color: red;
+    border-radius: 76px;
+    justify-self: center;
+    z-index: 40;
+    border: solid 7px rgba(255, 255, 255, 0.501);
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    text-decoration: none;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 0 80px rgb(255, 255, 255);
+    border: solid 7px rgba(255, 255, 255, 0.845);
+    text-decoration: none;
+}
+
+.texto-tarjeta {
+    margin-left: 66px;
+    align-self: center;
+    color: white;
+}
+
+.titulo-tarjeta {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-42) Helvetica;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 24px/42px Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.contenedor-reserva {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 250px;
+    height: 80px;
+    justify-self: center;
+}
+
+.precio {
+    width: 250px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    height: 40px;
+    background: #FA6980 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    justify-items: center;
+}
+
+.texto-reserva {
+    align-self: center;
+    color: white;
+}
+
+.opaco {
+    background-color: rgba(0, 0, 0, 0.616);
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    display: grid;
+    display: none;
+    overflow-y: hidden;
+}
+
+.contenedor_creacion {
+    height: auto;
+    width: 80%;
+    background-color: blanchedalmond;
+    border-radius: 70px;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 3rem;
+    padding: 3rem;
+    row-gap: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.tarjeta_vista_previa {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 714px;
+    height: 420px;
+    background: transparent url('/img/Componente 35 – 1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-color: red;
+    border-radius: 76px;
+    justify-self: center;
+    border: solid 7px rgba(255, 255, 255, 0.501);
+    grid-column: 1/3;
+}
+
+.division_completa_administrador {
+    grid-column: 1/3;
+}
+
+.numero_de_filas {
+    width: auto;
+    justify-self: center;
+    grid-column: 1/3;
+    margin-top: 2rem;
+}
+
+.contenedor_tabla {
+    display: grid;
+    width: 100%;
+    background-color: #FA6980;
+    height: auto;
+    align-self: center;
+}
+
+.tabla {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+td p {
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.titulo_vista_previa {
+    justify-self: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font: normal normal normal 30px/40px Open Sans;
+    font-family: "Open Sans";
+    font-weight: 500;
+}
+
+.botones_registro {
+    display: grid;
+    height: 3rem;
+    width: 80%;
+    justify-self: center;
+    grid-column: 1/3;
+    background-color: red;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+}

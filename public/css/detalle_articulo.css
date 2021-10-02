@@ -1,0 +1,116 @@
+   .contenedor {
+       width: 100%;
+       height: auto;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+   }
+
+   .fondo_texto {
+       background: transparent url('../img/fondo.jpg') 0% 0% no-repeat padding-box;
+       height: 100%;
+       width: 75%;
+       align-self: center;
+       justify-self: center;
+       z-index: 10;
+       grid-row: 1/2;
+       grid-column: 1/2;
+       border-radius: 53px;
+       background-size: cover;
+   }
+
+   .contenedor_contenido_articulo {
+       height: auto;
+       min-height: 100rem;
+       width: 90%;
+       z-index: 20;
+       grid-row: 1/2;
+       grid-column: 1/2;
+       align-self: center;
+       justify-self: center;
+       position: relative;
+   }
+
+   .primera_imagen {
+       position: absolute;
+       width: 50%;
+       height: 588px;
+       background-color: royalblue;
+       border-radius: 141px;
+       opacity: 1;
+       align-self: flex-start;
+       transform: translateY(-25%);
+       right: 0;
+       float: right;
+       shape-outside: border-box;
+   }
+
+   .segunda_imagen {
+       position: absolute;
+       width: 50%;
+       height: 588px;
+       background-color: rgb(126, 45, 45);
+       border-radius: 141px;
+       opacity: 1;
+       float: left;
+       shape-outside: border-box;
+       top: 50%;
+       transform: translateY(-50%);
+   }
+
+   .tercera_imagen {
+       position: absolute;
+       width: 50%;
+       height: 588px;
+       background-color: rgb(225, 174, 65);
+       border-radius: 141px;
+       opacity: 1;
+       align-self: flex-end;
+       float: right;
+       shape-outside: border-box;
+       bottom: 0;
+       transform: translateY(25%);
+       right: 0;
+   }
+
+   .contenedor_descripcion {
+       background-color: rgba(0, 0, 0, 0.486);
+       width: 141px;
+       height: 221px;
+       border-radius: 15px;
+       position: absolute;
+       bottom: 10%;
+       right: 10%;
+       display: grid;
+   }
+
+   .descripcion {
+       color: #FCBB17;
+       justify-self: center;
+       align-self: center;
+       text-align: center;
+   }
+
+   .titulo_articulo {
+       color: #FCBB17;
+       z-index: 20;
+       text-align: justify;
+       height: auto;
+       width: auto;
+       margin-left: 15%;
+       margin-right: 15%;
+       margin-top: 10%;
+       margin-bottom: 10%;
+   }
+
+   .ubicacion {
+       color: gray;
+       grid-column: 2/4;
+       grid-row: 1/2;
+   }
+
+   .fecha_de_publicacion {
+       color: gray;
+       grid-column: 2/4;
+       grid-row: 1/2;
+   }

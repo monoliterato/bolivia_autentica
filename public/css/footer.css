@@ -1,0 +1,274 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    width: 100%;
+    min-height: 500px;
+    max-height: auto;
+    background: transparent url('../img/fondo.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+    z-index: 10;
+}
+
+.degradado {
+    width: 100%;
+    height: 81px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 15%, #FFFCFCF7 25%, #80808000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-self: flex-start;
+    grid-column: 1/span 3;
+}
+
+.izquierda {
+    margin-top: 80px;
+    width: 90%;
+    height: 393px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.24);
+    grid-row: 1/2;
+    grid-column: 1/ 2;
+    justify-self: center;
+    display: grid;
+}
+
+.medio {
+    margin-top: 80px;
+    width: 90%;
+    height: 393px;
+    background: #ffffff24 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: grid;
+}
+
+.redes {
+    display: grid;
+    height: 30%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+
+.derecha {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    width: 90%;
+    height: 393px;
+    background: #FFFFFF24 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: center;
+    row-gap: 1.5rem;
+}
+
+.derecha,
+.centro,
+.izquierda,
+.degradado {
+    grid-row: 1/2;
+}
+
+.fondo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 38px;
+    width: 304px;
+    height: 118px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    border-radius: 52px;
+    opacity: 1;
+    z-index: 2;
+    justify-self: center;
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    background: transparent url('../img/LOGO/LOGO.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.letra-redes {
+    grid-column: 1/5;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/6px BentonSans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal bold 20px/2rem BentonSans;
+    letter-spacing: 0px;
+    color: #FCBB17;
+    opacity: 1;
+    align-self: flex-start;
+}
+
+.letra-derecha {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/25px BentonSans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 24px/25px BentonSans;
+    letter-spacing: 0px;
+    color: #FCBB17;
+    opacity: 1;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/span 2;
+    grid-row: 1/2;
+}
+
+.letra-contacto {
+    margin-top: 0px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 14px/25px BentonSans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 14px/25px BentonSans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.primero {
+    padding-left: 30px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.segundo {
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+}
+
+.tercero {
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    padding-left: 30px;
+}
+
+.cuarto {
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+}
+
+.centro div {
+    margin: 95px 89px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 26px;
+    width: 369px;
+    height: 129px;
+    justify-items: center;
+    align-items: center;
+}
+
+.facebook {
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.facebook:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+}
+
+.instagram {
+    width: 39px;
+    height: 39px;
+    background: transparent url('../img/ICONOS/Icon\ awesome-instagram.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.instagram:hover {
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: #f5b000;
+}
+
+.twitter {
+    width: 45px;
+    height: 37px;
+    background: transparent url('../img/ICONOS/Icon\ awesome-twitter.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.twitter:hover {
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: #f5b000;
+}
+
+.youtube {}
+
+.tiktok {
+    width: 39px;
+    height: 45px;
+    background: transparent url('../img/ICONOS/Icon\ simple-tiktok.svg');
+    opacity: 1;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.tiktok:hover {
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    border-radius: 7px;
+    background-color: #f5b000;
+}
+
+.direccion {
+    width: 23px;
+    height: 33px;
+    background: transparent url('../img/ICONOS/Icon\ material-place.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.whatsapp {
+    width: 35px;
+    height: 35px;
+    background: transparent url('../img/ICONOS/Icon\ simple-whatsapp.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.telefono {
+    width: 30px;
+    height: 30px;
+    background: transparent url('../img/ICONOS/Icon\ material-perm-phone-msg.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}

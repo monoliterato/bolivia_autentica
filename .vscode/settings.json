@@ -1,0 +1,4 @@
+{
+    "bladeFormatter.format.enabled": false,
+    "bladeFormatter.format.wrapAttributes": "force-aligned"
+}

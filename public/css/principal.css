@@ -1,0 +1,267 @@
+.contenedor_slider_tarjetas {
+    width: 100%;
+    height: auto;
+}
+
+.envoltorio_pandemia {
+    margin-top: 3rem;
+    height: auto;
+    width: 100%;
+    display: grid;
+}
+
+.contenedor_anuncio_pandemia {
+    width: 95%;
+    height: 675px;
+    background-color: red;
+    border-radius: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    z-index: 10;
+}
+
+.degradado_anuncio_pandemia {
+    height: 100%;
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 20;
+    border-radius: 95px;
+    background: transparent linear-gradient(90deg, #000000 0%, #000000 33%, #00000099 60%, #0000003A 77%, #54545400 100%) 0% 0% no-repeat padding-box;
+}
+
+.contenedor_texto_pandemia {
+    background-color: goldenrod;
+    height: 70%;
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 30;
+}
+
+.texto_pandemia_titulo {
+    color: #FA6980;
+    text-align: left;
+    font: normal normal normal 20px/40px Open Sans;
+    font-family: "Open Sans";
+    font-weight: 250;
+}
+
+.texto_pandemia_cuerpo {
+    color: white;
+    text-align: left;
+    font: normal normal normal 23px/40px Open Sans;
+    font-family: "Open Sans";
+    font-weight: 350;
+}
+
+.envoltorio_categorias {
+    height: auto;
+    width: 100%;
+    display: grid;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.conjunto_categorias {
+    height: 100%;
+    width: 95%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.categoria {
+    width: 228px;
+    height: 320px;
+    border-radius: 64px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 0.3s;
+    justify-self: center;
+}
+
+.categoria_primera {
+    background: transparent url('../img/imagenes_permanentes/categorias/aventura.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+.categoria_segunda {
+    background: transparent url('../img/imagenes_permanentes/categorias/aventura_dos.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+.categoria_tercera {
+    background: transparent url('../img/imagenes_permanentes/categorias/aventura_tres.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+.categoria_cuarta {
+    background: transparent url('../img/imagenes_permanentes/categorias/aventura_cuatro.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+.categoria_quinta {
+    background: transparent url('../img/imagenes_permanentes/categorias/aventura_cinco.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+.categoria:hover {
+    box-shadow: 0 0 30px black;
+}
+
+.degradado_de_categoria {
+    width: 228px;
+    height: 320px;
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF00 21%, #93939300 48%, #00000054 67%, #000000BA 76%, #000000 83%, #000000 84%, #000000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 64px;
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
+.icono_categoria {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    transition: 20s;
+    margin-left: -20%;
+}
+
+.categoria:hover>.nombre_categoria>.icono_categoria {
+    background: radial-gradient(circle at center, cornsilk, cornsilk, cornsilk, transparent, transparent 100%);
+}
+
+.nombre_categoria {
+    justify-self: center;
+    position: relative;
+    bottom: -10%;
+}
+
+.envoltorio_anuncios {
+    height: auto;
+    width: 100%;
+    display: grid;
+}
+
+.envoltorio_contenido_anuncios {
+    height: auto;
+    width: 90%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: gold;
+}
+
+.envoltorio_imagenes_grandes {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-row: 1/4;
+    grid-column: 1/2;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.primera_imagen {
+    position: relative;
+    width: 90%;
+    height: 481px;
+    background: greenyellow;
+    border-radius: 42px;
+    opacity: 1;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 86% 7% 7%;
+    grid-template-columns: 1fr;
+}
+
+.segunda_imagen {
+    width: 90%;
+    height: 481px;
+    background: greenyellow;
+    border-radius: 42px;
+    opacity: 1;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 86% 7% 7%;
+    grid-template-columns: 1fr;
+}
+
+.envoltorio_imagenes_pequenas {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: #FA6980;
+    align-items: center;
+}
+
+.tercera_imagen {
+    width: 90%;
+    height: 90%;
+    background: orange;
+    border-radius: 22px;
+    opacity: 1;
+    justify-self: center;
+    display: grid;
+}
+
+.cuarta_imagen {
+    width: 90%;
+    height: 90%;
+    background: orange;
+    border-radius: 22px;
+    opacity: 1;
+    justify-self: center;
+}
+
+.quinta_imagen {
+    width: 90%;
+    height: 90%;
+    background: orange;
+    border-radius: 22px;
+    opacity: 1;
+    justify-self: center;
+}
+
+.envoltorio_texto_peque {
+    position: relative;
+    left: 7%;
+    align-self: flex-end;
+}
+
+.titulo_anuncio {
+    font: Open Sans;
+    font-family: "Open Sans";
+    font-weight: 200;
+    justify-self: flex-start;
+}
+
+.descripcion_imagen {
+    font: Open Sans;
+    font-family: "Open Sans";
+    font-weight: 200;
+    justify-self: flex-start;
+}
+
+.fecha_imagen {
+    font: Open Sans;
+    font-family: "Open Sans";
+    font-weight: 200;
+    justify-self: flex-start;
+    background-color: red;
+}
+
+.primera_imagen p {
+    justify-self: center;
+    align-self: flex-end;
+}
