@@ -247,7 +247,7 @@
 </div>
 </div>
 
-
+<h1>asdasdasdasdasd</h1>
 <!--ENLACES A JAVASCRIPT-->
 
 <script src="{{ asset('js/slider_de_tarjetas/script.js') }}"></script>
