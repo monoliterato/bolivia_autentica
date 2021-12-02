@@ -33,7 +33,7 @@ Route::view('/detalles_paquete', 'detalles_paquete')->name('detalles_paquete');
 Route::view('/quienes_somos', 'quienes_somos');
 Route::view('/detalles_articulo', 'detalles_articulo')->name('detalles_articulo');
 Route::view('/contactos', 'contactos');
-Route::view('/articulos', 'articulos');
+Route::view('/articulos', 'articulos')->name('articulos');
 Route::view('/ventas', 'ventas');
 Route::resource('paqueteControlador', 'App\Http\Controllers\PaqueteController');
 Route::resource('ventaControlador', 'App\Http\Controllers\VentaController');

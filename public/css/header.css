@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --amarillo: #fcbb17;
+    --rojo: #FA6980;
+    --fondo-palido: #FFEBCD;
+    --blanco: #FFFFFF;
+    --negro: black;
+}
+
 .slider {
     display: grid;
     width: 100%;
@@ -25,7 +33,7 @@
 .barra-navegacion {
     width: 1000px;
     height: 60px;
-    background: #FCBB17 0% 0% no-repeat padding-box;
+    background: var(--negro) 0% 0% no-repeat padding-box;
     border-radius: 6px;
     opacity: 1;
     display: grid;
