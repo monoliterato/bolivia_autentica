@@ -39,12 +39,12 @@
             <p class="descripcion_tarjeta_articulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, veritatis commodi dolorem delectus quaerat placeat quae laboriosam praesentium, iure eius nulla deserunt magni dolorum iusto reprehenderit sequi eaque cumque. Laboriosam?Tempore iure, ratione itaque alias mollitia porro veritatis esse obcaecati eius amet voluptates animi vero fuga sequi eaque asperiores ut, qui error voluptatem, repellendus sapiente! Impedit dignissimos deleniti nihil non?</p>
         </div>
 
-        <div class="imagen_tarjeta_articulo"></div>
+        <a class="imagen_tarjeta_articulo"   href="{{ route('detalles_articulo') }}" ></a>
     </div>
-    <div class="tarjeta-articulo"></div>
-    <div class="tarjeta-articulo"></div>
-    <div class="tarjeta-articulo"></div>
-    <div class="tarjeta-articulo"></div>
+    <a class="tarjeta-articulo"></a>
+    <a class="tarjeta-articulo"></a>
+    <a class="tarjeta-articulo"></a>
+    <a class="tarjeta-articulo"></a>
 
     <a class="anadir_articulo" onclick="formulario()" href="#top">
         <p >+</p>

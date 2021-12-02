@@ -85,6 +85,15 @@
     justify-self: center;
 }
 
+.degradado_de_categoria {
+    width: 228px;
+    height: 320px;
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF00 21%, #93939300 48%, #00000054 67%, #000000BA 76%, #000000 83%, #000000 84%, #000000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 64px;
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
 .categoria_primera {
     background: transparent url('../img/imagenes_permanentes/categorias/aventura.jpg') 0% 0% no-repeat padding-box;
     background-size: cover;
@@ -114,15 +123,6 @@
     box-shadow: 0 0 30px black;
 }
 
-.degradado_de_categoria {
-    width: 228px;
-    height: 320px;
-    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF00 21%, #93939300 48%, #00000054 67%, #000000BA 76%, #000000 83%, #000000 84%, #000000 100%) 0% 0% no-repeat padding-box;
-    border-radius: 64px;
-    grid-row: 1/4;
-    grid-column: 1/2;
-}
-
 .icono_categoria {
     height: 4rem;
     width: 4rem;
@@ -138,7 +138,7 @@
 .nombre_categoria {
     justify-self: center;
     position: relative;
-    bottom: -10%;
+    bottom: 95%;
 }
 
 .envoltorio_anuncios {

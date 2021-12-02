@@ -22,7 +22,7 @@
             <a class="enlace-navegacion" href="/paquetes">
                 <p class="texto-enlace">PAQUETES Y DESTINOS</p>
             </a>
-            <a class="circulo" href=" /ventaControlador ">
+            <a class="circulo" href=" /index ">
                 <div class="logo-cabecera"></div>
             </a>
             <a class="enlace-navegacion" href="/articulos">

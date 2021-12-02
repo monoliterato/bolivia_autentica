@@ -13,23 +13,25 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
 
 
+Route::view('/', 'index');
+
 Route::view('/index', 'index');
 Route::view('/rota', 'rota');
 Route::view('/paquetes', 'paquetes_y_destinos');
-Route::view('/detalles_paquete', 'detalles_paquete')->name('detalles_paquete');;
+Route::view('/detalles_paquete', 'detalles_paquete')->name('detalles_paquete');
 Route::view('/quienes_somos', 'quienes_somos');
-Route::view('/detalles_articulo', 'detalles_articulo');
+Route::view('/detalles_articulo', 'detalles_articulo')->name('detalles_articulo');
 Route::view('/contactos', 'contactos');
 Route::view('/articulos', 'articulos');
 Route::view('/ventas', 'ventas');

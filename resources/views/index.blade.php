@@ -19,11 +19,7 @@
 
 
 
-@foreach ($ventas as $venta)
-<p>{{ $venta->cantidad_de_boletos }}</p>
-<p>{{ $venta->id_venta }}</p>
-<p>asdasd</p>
-@endforeach
+
 
 <div class="contenedor_slider_de_tarjetas">
 
@@ -247,7 +243,7 @@
 </div>
 </div>
 
-<h1>asdasdasdasdasd</h1>
+
 <!--ENLACES A JAVASCRIPT-->
 
 <script src="{{ asset('js/slider_de_tarjetas/script.js') }}"></script>
