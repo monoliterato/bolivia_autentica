@@ -74,17 +74,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 834px) {
-    .conjunto_categorias {
-        height: 100%;
-        width: 95%;
-        justify-self: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 3rem;
-    }
-}
-
 .categoria {
     width: 228px;
     height: 320px;
@@ -275,4 +264,87 @@
 .primera_imagen p {
     justify-self: center;
     align-self: flex-end;
+}
+
+@media screen and (min-width:320px) and (max-width:428px) {
+    .degradado_anuncio_pandemia {
+        border-radius: 45px;
+    }
+    .texto_pandemia_titulo {
+        color: #FA6980;
+        text-align: left;
+        font: normal normal normal 12px/15px Open Sans;
+        font-family: "Open Sans";
+        font-weight: 250;
+    }
+    .texto_pandemia_cuerpo {
+        color: white;
+        text-align: left;
+        font: normal normal normal 12px/15px Open Sans;
+        font-family: "Open Sans";
+        font-weight: 350;
+    }
+    .contenedor_anuncio_pandemia {
+        width: 95%;
+        height: 230px;
+        background-color: red;
+        border-radius: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        z-index: 10;
+    }
+    .conjunto_categorias {
+        height: 100%;
+        width: 95%;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 3rem;
+    }
+    .categoria {
+        width: 90%;
+        height: 230px;
+    }
+    .degradado_de_categoria {
+        width: 90%;
+        height: 230px;
+    }
+    .categoria_quinta {
+        width: 45%;
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 834px) {
+    .contenedor_anuncio_pandemia {
+        width: 95%;
+        height: 475px;
+        background-color: red;
+        border-radius: 95px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        z-index: 10;
+    }
+    .conjunto_categorias {
+        height: 100%;
+        width: 95%;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 3rem;
+    }
+    .categoria_cuarta {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin-right: 35%;
+    }
+    .categoria_quinta {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin-left: 35%;
+    }
 }

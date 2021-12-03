@@ -85,3 +85,9 @@
     background-size: cover;
     justify-self: center;
 }
+
+@media screen and (min-width:320px) and (max-width:428px) {
+    .barra-navegacion {
+        display: none;
+    }
+}
