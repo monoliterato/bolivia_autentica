@@ -48,7 +48,7 @@
 }
 
 .barra-navegacion {
-    width: 1000px;
+    width: 75%;
     height: 60px;
     background: #FCBB17 0% 0% no-repeat padding-box;
     border-radius: 6px;
@@ -80,6 +80,18 @@
     opacity: 1;
     text-decoration: none;
     margin-top: 14%;
+}
+
+@media screen and (max-width:834px) {
+    .texto-enlace {
+        font: normal normal bold 10px/6px BentonSans;
+    }
+    .barra-navegacion {
+        height: 30px;
+    }
+    .enlace-navegacion {
+        height: 30px;
+    }
 }
 
 .circulo {

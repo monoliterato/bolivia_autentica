@@ -74,6 +74,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+@media screen and (max-width: 834px) {
+    .conjunto_categorias {
+        height: 100%;
+        width: 95%;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3rem;
+    }
+}
+
 .categoria {
     width: 228px;
     height: 320px;
