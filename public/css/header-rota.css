@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --amarillo: #fcbb17;
+    --rojo: #FA6980;
+    --fondo-palido: #FFEBCD;
+    --blanco: #FFFFFF;
+    --negro: black;
+}
+
+body {
+    background-color: var(--blanco);
+}
+
 .contenedor-360 {
     display: grid;
     grid-template-columns: 1fr;

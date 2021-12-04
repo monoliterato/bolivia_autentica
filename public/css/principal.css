@@ -267,6 +267,9 @@
 }
 
 @media screen and (min-width:320px) and (max-width:428px) {
+    body {
+        background-color: var(--blanco);
+    }
     .degradado_anuncio_pandemia {
         border-radius: 45px;
     }
@@ -308,12 +311,19 @@
         height: 230px;
     }
     .degradado_de_categoria {
-        width: 90%;
+        width: 100%;
         height: 230px;
     }
     .categoria_quinta {
         width: 45%;
         grid-column: 1/3;
+    }
+    .icono_categoria {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        transition: 20s;
+        margin-left: -3%;
     }
 }
 

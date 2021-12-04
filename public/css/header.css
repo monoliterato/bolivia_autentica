@@ -12,6 +12,10 @@
     --negro: black;
 }
 
+body {
+    background-color: var(--blanco);
+}
+
 .slider {
     display: grid;
     width: 100%;
