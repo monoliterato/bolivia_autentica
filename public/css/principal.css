@@ -325,6 +325,84 @@
         transition: 20s;
         margin-left: -3%;
     }
+    .envoltorio_contenido_anuncios {
+        height: auto;
+        width: 90%;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: gold;
+    }
+    .envoltorio_imagenes_pequenas {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        background: #FA6980;
+        align-items: center;
+    }
+    .envoltorio_imagenes_grandes {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+    .tercera_imagen {
+        width: 90%;
+        height: 50%;
+        background: orange;
+        border-radius: 22px;
+        opacity: 1;
+        justify-self: center;
+        display: grid;
+    }
+    .cuarta_imagen {
+        width: 90%;
+        height: 50%;
+        background: orange;
+        border-radius: 22px;
+        opacity: 1;
+        justify-self: center;
+    }
+    .quinta_imagen {
+        width: 90%;
+        height: 50%;
+        background: orange;
+        border-radius: 22px;
+        opacity: 1;
+        justify-self: center;
+    }
+    .primera_imagen {
+        position: relative;
+        width: 90%;
+        height: 181px;
+        background: greenyellow;
+        border-radius: 42px;
+        opacity: 1;
+        justify-self: center;
+        display: grid;
+        grid-template-rows: 86% 7% 7%;
+        grid-template-columns: 1fr;
+    }
+    .segunda_imagen {
+        width: 90%;
+        height: 181px;
+        background: greenyellow;
+        border-radius: 42px;
+        opacity: 1;
+        justify-self: center;
+        display: grid;
+        grid-template-rows: 86% 7% 7%;
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width: 428px) and (max-width: 834px) {

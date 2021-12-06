@@ -10,6 +10,10 @@
 
 </head>
 <body>
+    <div class="navbar">
+        <a href="#home" class="logo_cellphone"></a>
+        <a href="#contact" class="dropdown">M</a>
+      </div>
     <div class="contenedor-360">
         <embed src="{{ asset('../rota') }}" id="gira" type="">
         <div class="barra-navegacion">
@@ -33,3 +37,11 @@
         <div class="transicion-header"></div>
 
     </div>
+
+
+
+
+
+
+
+

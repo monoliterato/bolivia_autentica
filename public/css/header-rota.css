@@ -145,4 +145,45 @@ body {
     .barra-navegacion {
         display: none;
     }
+    .navbar {
+        overflow: hidden;
+        background-color: var(--amarillo);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50% 25% 25%;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar a:hover {
+        text-decoration: none;
+        background: #ddd;
+        color: black;
+    }
+    .logo_cellphone {
+        width: 115px;
+        height: 32px;
+        background: transparent url('../img/LOGO/LOGO.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        align-self: center;
+        background-size: cover;
+        justify-self: flex-start;
+        text-decoration: none;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .dropdown {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
 }

@@ -36,3 +36,13 @@
     </div>
 
 
+
+    <!---------------------------->
+
+    <div class="navbar">
+        <a href="#home" class="logo">LOGO</a>
+        <a href="#news">PAQUETES Y DESTINOS</a>
+        <a href="#contact">EVENTOS Y ARTICULOS</a>
+        <a href="#contact">MENU</a>
+      </div>
+
