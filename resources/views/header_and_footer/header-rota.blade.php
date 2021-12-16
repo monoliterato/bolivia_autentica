@@ -8,11 +8,14 @@
 <link rel="stylesheet" href="{{ asset('../css/header-rota.css') }}">
 <link rel="stylesheet" href="{{ asset('../css/footer.css') }}">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
 </head>
 <body>
     <div class="navbar">
         <a href="#home" class="logo_cellphone"></a>
-        <a href="#contact" class="dropdown">M</a>
+        <a href="#contact" class="dropdown"><i class="far fa-user"></i></a>
       </div>
     <div class="contenedor-360">
         <embed src="{{ asset('../rota') }}" id="gira" type="">
